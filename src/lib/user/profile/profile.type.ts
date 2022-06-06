@@ -4,4 +4,7 @@ export type ProfileAttrs = {
     website?: string,
     // twitter_handle?: string
     avatar_url?:string,
+
+    computer_score?:number,
+    user_score?:number,
 }

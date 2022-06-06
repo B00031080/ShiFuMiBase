@@ -1,7 +1,7 @@
 import { auth, from, fromBucket } from '$lib/supabase'
 import type{ ProfileAttrs } from './profile.type'
 
-const GET_COL_SET = `username, website, avatar_url`
+const GET_COL_SET = `username, website, avatar_url, user_score, computer_score`
 
 
 export const getUserProfile = (id: string) => from('profiles').select(GET_COL_SET).eq('id', id).single()
